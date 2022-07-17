@@ -14,8 +14,8 @@ export const Cards = ({ project }) => {
 			<CardMedia
 				component="img"
 				height="140"
-				image="/logo512.png" //project.image
-				alt="green iguana"
+				image={project.image}
+				alt="project preview image"
 			/>
 			<CardContent>
 				<Typography gutterBottom variant="h5" component="div">
