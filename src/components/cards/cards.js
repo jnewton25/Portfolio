@@ -26,8 +26,24 @@ export const Cards = ({ project }) => {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button size="small">Live Demo</Button>
-				<Button size="small">GitHub</Button>
+				<Button
+					size="small"
+					onClick={(e) => {
+						e.preventDefault();
+						window.open(project.demo, "_blank");
+					}}
+				>
+					Live Demo
+				</Button>
+				<Button
+					size="small"
+					onClick={(e) => {
+						e.preventDefault();
+						window.open(project.link, "_blank");
+					}}
+				>
+					GitHub
+				</Button>
 			</CardActions>
 		</Card>
 	);
