@@ -1,0 +1,7 @@
+.navbar.transparent.navbar-inverse .navbar-inner {
+	background: rgba(85, 122, 149, 0.5);
+}
+
+.nav-bg {
+	background: rgba(85, 122, 149, 0.7);
+}

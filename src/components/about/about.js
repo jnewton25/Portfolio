@@ -1,11 +1,12 @@
 import React from "react";
+import "./about.css";
 
 export const About = () => {
 	return (
 		<div>
-			<div class="home-about-text">
-				<span class="section-span"></span>
-				<h2 class="section-header">About Me</h2>
+			<div className="bg">
+				<span className="section-span"></span>
+				<h2 className="section-header">About Me</h2>
 				<p>
 					Hi, my name's Justin, a Front End Web Developer from Dallas,
 					TX.
@@ -17,7 +18,7 @@ export const About = () => {
 					Estate Agent.
 				</p>
 			</div>
-			<div class="home-about-image">
+			<div className="home-about-image">
 				<img src="./about-image.png" alt="about" />
 			</div>
 		</div>
