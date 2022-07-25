@@ -1,10 +1,12 @@
 import React from "react";
 import "./about.css";
+//import "../images.js";
+import justin from "../images/justin.jpeg";
 
 export const About = () => {
 	return (
-		<div>
-			<div className="bg">
+		<div className="bg">
+			<div>
 				<span className="section-span"></span>
 				<h2 className="section-header">About Me</h2>
 				<p>
@@ -19,7 +21,7 @@ export const About = () => {
 				</p>
 			</div>
 			<div className="home-about-image">
-				<img src="./about-image.png" alt="about" />
+				<img src={justin} alt="justin" />
 			</div>
 		</div>
 	);
