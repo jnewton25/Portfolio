@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 export const Work = () => {
 	return (
-		<div className="bg">
+		<div className="container-fluid bg">
 			<Row>
 				{project.map((project) => (
 					<Cards key={project.id} project={project} />

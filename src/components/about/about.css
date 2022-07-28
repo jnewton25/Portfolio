@@ -6,3 +6,25 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.about-home {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-about-img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1;
+}
+
+.home-about-img img {
+	width: 400px;
+	margin-right: 3%;
+	box-shadow: 22px 22px 0 3px;
+	border-radius: 20px;
+}
