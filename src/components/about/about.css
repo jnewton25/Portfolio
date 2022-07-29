@@ -13,6 +13,7 @@
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+	margin: 80px 15%;
 }
 
 .home-about-img {
@@ -27,4 +28,11 @@
 	margin-right: 3%;
 	box-shadow: 22px 22px 0 3px;
 	border-radius: 20px;
+}
+
+.section-header {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 400;
 }

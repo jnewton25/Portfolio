@@ -5,6 +5,7 @@ export const About = () => {
 	return (
 		<div className="container-fluid bg">
 			<div className="row about-home">
+				<div className="col-2"></div>
 				<div className="col">
 					<span className="section-span"></span>
 					<h2 className="section-header">About Me</h2>
@@ -22,6 +23,7 @@ export const About = () => {
 				<div className="home-about-img col">
 					<img src="/assets/justin.jpg" alt="justin" />
 				</div>
+				<div className="col-2"></div>
 			</div>
 		</div>
 	);
