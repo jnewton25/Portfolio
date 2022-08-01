@@ -7,3 +7,7 @@
 	align-items: center;
 	overflow: auto;
 }
+
+.card-layout {
+	display: flex;
+}
