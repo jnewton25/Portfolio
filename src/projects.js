@@ -33,7 +33,7 @@ export const project = [
 	},
 	{
 		id: 5,
-		title: "FreeCodeCamp Portfolio Project",
+		title: "FCC Portfolio Project",
 		body: "example content",
 		image: "/logo512.png",
 		link: "https://github.com/jnewton25/fccPortfolioProject",
@@ -44,7 +44,7 @@ export const project = [
 		title: "Valorant Survey Form",
 		body: "example content",
 		image: "/logo512.png",
-		link: "https://github.com/jnewton25/valorant-survey-form",
+		link: "https://github.com/jnewton25",
 		demo: "https://codepen.io/justinmnewton/full/LYbyoNe",
 	},
 	{
