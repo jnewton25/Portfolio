@@ -6,14 +6,12 @@ import { Grid } from "@mui/material";
 
 export const Work = () => {
 	return (
-		<div className="container-fluid bg card-layout">
-			<Grid container>
-				{project.map((project) => (
-					<Grid item xs={12} sm={6} md={4}>
-						<Cards key={project.id} project={project} />
-					</Grid>
-				))}
-			</Grid>
-		</div>
+		<Grid container spacing={3}>
+			{project.map((project) => (
+				<Grid item xs={12} sm={6} md={4}>
+					<Cards key={project.id} project={project} />
+				</Grid>
+			))}
+		</Grid>
 	);
 };
