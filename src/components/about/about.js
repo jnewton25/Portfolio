@@ -10,7 +10,7 @@ export const About = () => {
 					<span className="section-span"></span>
 					<h2 className="section-header">About Me</h2>
 					<p>
-						Hi, my name's Justin, a Front End Web Developer from
+						Hello, my name's Justin, a Front End Web Developer from
 						Dallas, TX.
 					</p>
 					<br />
