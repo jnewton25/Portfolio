@@ -4,6 +4,17 @@ import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
 	const form = useRef();
+	const nameRef = useRef(null);
+	const emailRef = useRef(null);
+	const textRef = useRef(null);
+
+	const handleSubmit = (event) => {
+		console.log("handleSubmit ran");
+		event.preventDefault();
+
+		// 👇️ clear all input values in the form
+		event.target.reset();
+	};
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -38,6 +49,7 @@ export const Contact = () => {
 							<div class="input-container ic2">
 								<label className="label-text">Name</label>
 								<input
+									ref={nameRef}
 									type="text"
 									name="user_name"
 									className="input"
@@ -47,6 +59,7 @@ export const Contact = () => {
 							<div class="input-container ic1">
 								<label className="label-text">Email</label>
 								<input
+									ref={emailRef}
 									type="email"
 									name="user_email"
 									className="input"
@@ -56,6 +69,7 @@ export const Contact = () => {
 							<div class="input-container ic1">
 								<label className="label-text">Message</label>
 								<textarea
+									ref={textRef}
 									name="message"
 									className="textarea"
 									placeholder="Message"
