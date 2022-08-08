@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .about-home {
@@ -31,9 +31,43 @@
 	position: relative;
 }
 
-.form-map {
-	background-image: url("/public/assets/map-iowa.png");
-	background-position: "center";
-	background-size: "cover";
-	background-repeat: "no-repeat";
+.form-map img {
+	max-width: 100%;
+	height: auto;
+}
+
+.form {
+	background-color: #15172b;
+	border-radius: 20px;
+	box-sizing: border-box;
+	height: 500px;
+	padding: 20px;
+	width: 320px;
+}
+
+.input {
+	background-color: #303245;
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	font-size: 18px;
+	height: 100%;
+	outline: 0;
+	padding: 4px 20px 0;
+	width: 100%;
+}
+
+.submit-btn {
+	background-color: #08d;
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	cursor: pointer;
+	font-size: 18px;
+	height: 50px;
+	margin-top: 38px;
+	text-align: center;
+	width: 100%;
 }
