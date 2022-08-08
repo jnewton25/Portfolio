@@ -29,25 +29,38 @@ export const Contact = () => {
 	return (
 		<div className="container-fluid bg mt-5">
 			<div className="row about-home">
+				<div className="col-2"></div>
 				<div className="col">
 					<span className="section-span"></span>
 					<h2 className="section-header">Contact</h2>
 					<div className="form">
 						<form ref={form} onSubmit={sendEmail}>
-							<label>Name</label>
-							<input
-								type="text"
-								name="user_name"
-								className="input"
-							/>
-							<label>Email</label>
-							<input
-								type="email"
-								name="user_email"
-								className="input"
-							/>
-							<label>Message</label>
-							<textarea name="message" className="textarea" />
+							<div class="input-container ic2">
+								<label className="label-text">Name</label>
+								<input
+									type="text"
+									name="user_name"
+									className="input"
+									placeholder="Name"
+								/>
+							</div>
+							<div class="input-container ic1">
+								<label className="label-text">Email</label>
+								<input
+									type="email"
+									name="user_email"
+									className="input"
+									placeholder="Email"
+								/>
+							</div>
+							<div class="input-container ic1">
+								<label className="label-text">Message</label>
+								<textarea
+									name="message"
+									className="textarea"
+									placeholder="Message"
+								/>
+							</div>
 							<input
 								type="submit"
 								value="Send"
