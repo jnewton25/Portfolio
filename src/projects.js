@@ -17,7 +17,7 @@ export const project = [
 	},
 	{
 		id: 3,
-		title: "Guesteaus",
+		title: "Gusteaus",
 		body: "example content",
 		image: "/assets/gusteaus-preview.png",
 		link: "https://github.com/jnewton25/Gusteaus",
