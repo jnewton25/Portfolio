@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faCodepen, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
 	const form = useRef();
@@ -8,6 +11,7 @@ export const Contact = () => {
 	const emailRef = useRef(null);
 	const textRef = useRef(null);
 
+	/*
 	const handleSubmit = (event) => {
 		console.log("handleSubmit ran");
 		event.preventDefault();
@@ -15,6 +19,7 @@ export const Contact = () => {
 		// 👇️ clear all input values in the form
 		event.target.reset();
 	};
+    */
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -30,6 +35,7 @@ export const Contact = () => {
 				(result) => {
 					console.log(result.text);
 					console.log("Message Sent");
+					alert("Message Sent!");
 				},
 				(error) => {
 					console.log(error.text);
@@ -39,9 +45,9 @@ export const Contact = () => {
 
 	return (
 		<div className="container-fluid bg mt-5">
-			<div className="row about-home">
-				<div className="col-2"></div>
-				<div className="col">
+			<div className="row contact-home">
+				<div className="col-12 col-md-2"></div>
+				<div className="col-12 col-md-5">
 					<span className="section-span"></span>
 					<h2 className="section-header">Contact</h2>
 					<div className="form">
@@ -83,8 +89,44 @@ export const Contact = () => {
 						</form>
 					</div>
 				</div>
-				<div className="form-map col">
+				<div className="form-map col-6 col-md-5">
 					<img src="/assets/iowa-map.png" alt="map" />
+				</div>
+				<div className="footer col-12">
+					<a
+						href="https://codepen.io/justinmnewton"
+						className="social-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon icon={faCodepen} />
+					</a>
+					<a
+						href="https://github.com/jnewton25"
+						className="social-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon icon={faGithub} />
+					</a>
+					<a
+						href="https://codepen.io/justinmnewton"
+						className="social-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon icon={faEnvelope} />
+					</a>
+					<a
+						href="https://codepen.io/justinmnewton"
+						className="social-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon icon={faAddressCard} />
+					</a>
+					<span>|</span>
+					<span>justin</span>
 				</div>
 			</div>
 		</div>
