@@ -1,5 +1,4 @@
 .bg {
-	height: 100vh;
 	width: 100%;
 	background-color: #557a95;
 	display: flex;
@@ -10,7 +9,6 @@
 
 .contact-home {
 	display: flex;
-	height: 100vh;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -143,10 +141,21 @@
 .footer {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
+	margin-bottom: 15vh;
+}
+
+.social {
+	color: #eee;
+	font-size: 1.2rem;
 }
 
 .social-link {
 	text-decoration: none;
 	color: #eee;
+	font-size: 1.5rem;
+}
+
+.social-link:hover {
+	color: #15172b;
 }

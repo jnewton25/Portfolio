@@ -45,7 +45,7 @@ export const Contact = () => {
 
 	return (
 		<div className="container-fluid bg mt-5">
-			<div className="row contact-home">
+			<div className="row contact-home clearfix">
 				<div className="col-12 col-md-2"></div>
 				<div className="col-12 col-md-5">
 					<span className="section-span"></span>
@@ -92,7 +92,8 @@ export const Contact = () => {
 				<div className="form-map col-6 col-md-5">
 					<img src="/assets/iowa-map.png" alt="map" />
 				</div>
-				<div className="footer col-12">
+				<div className="col-9"></div>
+				<div className="footer col-3">
 					<a
 						href="https://codepen.io/justinmnewton"
 						className="social-link"
@@ -125,8 +126,8 @@ export const Contact = () => {
 					>
 						<FontAwesomeIcon icon={faAddressCard} />
 					</a>
-					<span>|</span>
-					<span>justin</span>
+					<span className="social">|</span>
+					<span className="social">justin</span>
 				</div>
 			</div>
 		</div>
